@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Chat</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to your favorite chat</h1>
+        </header>
+        <main>
+            <section id="messages"></section>
+
+            <section>
+                <form action="#">
+                    <label for="message">Type a message</label>
+                    <textarea name="message" id="message" required minlength="1"></textarea>
+                    <button type="submit">Send</button>
+                </form>     
+            </section>
+        </main>
+
+        <footer>
+            <p>Made by Quentin Monmousseau in 2019.</p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pouchdb/7.0.0/pouchdb.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
